@@ -18,7 +18,8 @@ body {
     width: 900px;
     height: 600px;
     padding: 30px;
-    background-color: #86bdf7;
+    background-image: url("https://media.istockphoto.com/vectors/new-realistic-neon-sign-of-quiz-frame-logo-for-decoration-and-on-the-vector-id1161439188?k=6&m=1161439188&s=612x612&w=0&h=wOn2xdxN4Zzp50ywPxUL5-Z9NLPduTSZP0OdmQpZ7wg=");
+    background-size: cover;
     border-radius: 10px;
     box-shadow: 10px 10px 20px;
     text-align: center;
@@ -30,11 +31,14 @@ body {
     margin-bottom: 40px;
     text-decoration: underline;
     text-underline-offset: 8px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 .container .question {
     font-size: 30px;
     margin-top: 50px;
+    color: white;
 }
 
 .container .choices {
@@ -71,14 +75,14 @@ body {
     padding: 12px 20px;
     font-weight: 600;
     margin: 20px auto 0 auto;
-    background-color: #cf7cd6;
+    background-color: #121012;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #dfb1db;
+.nextBtn{
+    color: white;
 }
 
 .scoreCard {
@@ -87,7 +91,7 @@ body {
 }
 
 .alert {
-    background-color: #353231;
+    background-color: #e8410a;
     color: white;
     text-align: center;
     width: 100%;
@@ -119,6 +123,52 @@ body {
     justify-content: center;
     align-items: center
 }
+
+
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
 /* Adding Animation to  choices  */
 
 @keyframes fade-in {
@@ -149,3 +199,4 @@ body {
         font-size: 20px;
     }
 }
+
