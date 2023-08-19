@@ -2,4 +2,4 @@ NXTECH Quiz App
 
 Description:
 
-NXTECH Quiz App is a web-based application that allows users to take a quiz on topics related to HTML, CSS, and JavaScript. The app features a timer, multiple-choice questions, and a scoring system. Users can select their answers, and the app will evaluate their performance at the end of the quiz.
+NXTECH The Quiz App is a browser-based application designed to enable users to engage in quizzes covering subjects concerning HTML, CSS, and JavaScript. Among its attributes are a timer, a collection of multiple-choice inquiries, and a comprehensive scoring mechanism. Participants have the capacity to designate their preferred choices, with the application subsequently assessing their achievements upon quiz completion.
